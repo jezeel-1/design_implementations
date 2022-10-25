@@ -1,0 +1,139 @@
+html {
+    background-color: rgb(229, 225, 225);
+}
+
+main {
+    width: 85%;
+    max-width: 358px;
+    margin: 40px auto;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.img-wrapper img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.img-wrapper .desktop-img {
+    display: none;
+}
+
+.img-wrapper .mobile-img {
+    display: block;
+}
+
+.text-wrapper {
+    width: 100%;
+    height: 250px;
+    margin-left: 6px;
+}
+
+h1 {
+    font-family: 'Franklin', serif;
+    margin: 0.4em 0;
+    font-size: 16px;
+    color: hsl(212, 21%, 14%);
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0.3em 0;
+    font-weight: 500;
+}
+
+.perfume-tag {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.price h1 {
+    color: hsl(158, 36%, 37%);
+    margin-right: 0.6rem;
+}
+
+.price span {
+    text-decoration: line-through;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+    width: 80%;
+    border-radius: 7px;
+    background-color: hsl(158, 36%, 37%);
+    ;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    margin-left: 4px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    margin-right: 3px;
+}
+
+.icon {
+    margin-right: 3px;
+}
+
+@media screen and (min-width: 760px) {
+    main {
+        display: flex;
+        width: 90%;
+        max-width: 550px;
+    }
+
+    .img-wrapper {
+        display: flex;
+        flex-grow: 1;
+        width: 50%;
+    }
+
+    .img-wrapper img {
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+
+    .text-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        flex-grow: 1;
+        margin: 20px 10px -30px 10px;
+        width: 90%;
+        height: 300px;
+    }
+
+    .img-wrapper {
+        width: 100%;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .img-wrapper .mobile-img {
+        display: none;
+    }
+
+    .img-wrapper .desktop-img {
+        display: block;
+    }
+
+    h1 {
+        margin: 0.6em 0;
+        font-size: 30px;
+    }
+}
